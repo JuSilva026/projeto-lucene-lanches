@@ -23,10 +23,14 @@ Angular 5 com Typescript;
 Framework Bootstrap 4 responsivo;
 
 ## Navegadores
-Internet Explorer;
 
-Google Chrome;
+Suporte as versões N -1 dos browsers: 
 
-Firefox;
+Google Chrome; 
 
+Firefox; 
+
+Internet Explorer e Edge;
+
+Safari;
 
