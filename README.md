@@ -5,7 +5,9 @@ O projeto foi gerado pelo [Angular CLI](https://github.com/angular/angular-cli) 
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Execute o 'ng serve' para um servidor dev. Navegue para http: // localhost: 4200 /. O aplicativo irá recarregar automaticamente se você alterar qualquer um dos arquivos de origem.
+
+Dica de Software: Visual Studio Code, que possui um terminar integrado.
 
 ## Code scaffolding
 
