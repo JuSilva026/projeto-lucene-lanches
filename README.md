@@ -20,9 +20,9 @@ Angular 5 com Typescript;
 Framework Bootstrap 4 responsivo;
 
 ## Navegadores
-Internet Explorer;
-Google Chrome;
-Firefox;
+*Internet Explorer;
+*Google Chrome;
+*Firefox;
 
 ## Running unit tests
 
