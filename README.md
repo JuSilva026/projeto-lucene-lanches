@@ -33,7 +33,7 @@ O projeto foi implementado utilizando as seguintes tecnologias/recursos:
 
 - Angular 5 com Typescript;
 - Framework Bootstrap 4 responsivo;
-
+- NodeJs;
 
 ## Navegadores
 
