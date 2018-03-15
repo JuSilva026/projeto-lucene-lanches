@@ -4,7 +4,7 @@ O Lucene Lanches disponibiliza o delivery do seu lanche favorito a seus clientes
 O projeto foi gerado pelo [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
 
 ## Git Clone
-git clone 
+git clone https://github.com/JuSilva026/projeto-lucene-lanches.git
 
 ## Servidor de desenvolvimento
 Baixe o arquivo e abra em um editor de código (Recomendado: Visual Studio Code que possui um 'Integrated Terminal').
