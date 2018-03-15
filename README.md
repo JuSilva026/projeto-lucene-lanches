@@ -11,9 +11,12 @@ Navegue para http: // localhost: 4200 /.
 O aplicativo irá recarregar automaticamente se você alterar qualquer um dos arquivos de origem.
 
 
-## Code scaffolding
+## Descrição do Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O projeto foi implementado utilizando as seguintes tecnologias/recursos:
+
+Angular 5 com Typescript;
+Framework Bootstrap 4 responsivo;
 
 ## Build
 
