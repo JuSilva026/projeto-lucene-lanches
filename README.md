@@ -26,11 +26,8 @@ Framework Bootstrap 4 responsivo;
 
 Suporte as versões N -1 dos browsers: 
 
-Google Chrome; 
-
-Firefox; 
-
-Internet Explorer e Edge;
-
-Safari;
+- Google Chrome;
+- Firefox;
+- Internet Explorer e Edge;
+- Safari;
 
