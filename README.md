@@ -1,4 +1,7 @@
 
+![Optional Text](../master/src/assets/img/welcome-bg3.png)
+
+
 # Lucene Lanches
 O Lucene Lanches disponibiliza o delivery a seus clientes para que eles possam realizar pedidos do seu lanche favorito a qualquer momento e em qualquer lugar.
 
