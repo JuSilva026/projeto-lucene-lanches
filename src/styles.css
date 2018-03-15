@@ -1,0 +1,207 @@
+/* Estilo personalizado bootstrap by: Juliana Silva */
+body{
+    background-color:white;
+}
+
+.btn-primary{
+    background: #73c501;
+    border: 0 !important;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    height: 51px;
+    line-height: 20px;
+    padding-left: 0;
+}
+
+
+
+.bg-light{
+    background-color: #c1032f !important;
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    height: 70px;
+}
+
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.menu_area #nav .nav-link {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    padding: 35px 15px;
+}
+
+.header_area.sticky .menu_area #nav .nav-link {
+    padding: 23px 15px;
+}
+
+.form-control{
+    height: 38px;
+    opacity: 0.5;
+    border-radius: 6px;
+    padding: 0px 15px;
+}
+
+.line-shape-white, .line-shape {
+    width: 80px;
+    height: 2px;
+    background-color: #fb397d;
+    margin-top: 15px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    margin-bottom: 60px;
+}
+
+.section-heading > h2 {
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 48px;
+    margin: 0;
+}
+
+.control-label{
+    color:white;
+}
+
+
+.control-label {
+    color: #6b6b6b;
+}
+
+.section-heading > h2 {
+    font-weight: 300;
+    color: #b5b9b0;
+}
+/*footer*/
+
+.index-social{
+    background-color:#2c2c2c;
+    color:#fff;
+}
+.link-area .fa-li{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:solid 1px #fff;
+    list-style-type:none;
+    margin:5px;
+    display:inline-block;
+}
+.index-social a{
+    color:#fff;
+    font-size:25px;
+    display:block;
+    float:left;
+    padding:10px;
+}
+.index-link h3{
+    text-align:center;
+   color:#f1f1f1;
+   text-align:left;
+   
+}
+.index-link{
+    background-color:#000;
+}
+.index-link ul{
+    padding:0px;
+}
+.index-link ul li{
+    list-style-type:none;
+}
+.index-link ul li a{
+  text-decoration:none;
+  font-size:16px;
+  color:#fff;
+  display:block;
+  padding:5px 0;
+  text-align:left;
+}
+.index-link ul li a:hover{
+     text-decoration:underline;
+}
+.copy-c{
+    padding-top:15px;
+}
+
+.index-link {
+    background-color: #e80a3d;
+}
+
+.index-social {
+    background-color: #c5002d;
+}
+
+.form-control {
+    border: 1px solid #494a4a;
+}
+
+.color-white{
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+agm-map {
+    height: 300px;
+  }
+
+  .btn-primary{
+   
+      float: right;
+      border-radius: 7px;
+      width: 170px;
+      float: right;
+    margin-right: 5px;
+  }
+
+  .valor{
+    font-size: 30px;
+    font-weight: bold;
+    color: #73c501;
+  }
+
+  fieldset{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .wdt-30{
+      width: 30%;
+  }
+
+  table{
+    border-right: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    margin-top: 25px;
+  }
+
+  .copy-c{
+      margin-left:10px;
+  }
+
+  .section-heading > h2 {
+    font-weight: 300;
+    color: #8b8c8a;
+  }
+
+  .form-control {
+    border: 1px solid #000;
+}

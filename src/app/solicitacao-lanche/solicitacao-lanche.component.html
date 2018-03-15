@@ -1,0 +1,332 @@
+<form #myForm="ngForm">
+  <img src="../assets/img/welcome-bg3.png" alt="Imagem Header" style="width:100%;cursor:pointer;">
+  <div class="container">
+    <div style="height:100px;"></div>
+    <div class="row">
+      <div class="col-12">
+        <!-- Heading Text -->
+        <div class="section-heading text-center">
+          <h2>Faça seu pedido online, é rápido e fácil :)</h2>
+          <div class="line-shape"></div>
+        </div>
+      </div>
+    </div>
+    <div id="section" class="form-group" [ngClass]="{'was-validated': !name.valid && (name.dirty || name.touched)}">
+      <label for="nome" class="control-label">* Nome:</label>
+      <input id="nome" type="text" name="nome" class="form-control" [(ngModel)]="nome" #name="ngModel" required maxlength="75"
+      />
+      <span class="invalid-feedback" *ngIf="name.errors && (name.dirty || name.touched)">
+        <div class="" role="alert">
+          <label *ngIf="name.errors.required">Este campo é
+            <b>obrigatório.</b>
+          </label>
+        </div>
+      </span>
+      <div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="form-group" [ngClass]="{'was-validated': !endereco.valid && (endereco.dirty || endereco.touched)}">
+          <label for="endereco" class="control-label">* Endereço:</label>
+          <input id="endereco" type="text" name="endereco" class="form-control" [(ngModel)]="enderecoModel" #endereco="ngModel" required
+            maxlength="100" />
+          <span class="invalid-feedback" *ngIf="endereco.errors && (endereco.dirty || endereco.touched)">
+            <div class="" role="alert">
+              <label *ngIf="endereco.errors.required"> Este campo é
+                <b>obrigatório.</b>
+              </label>
+
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="form-group">
+          <label class="control-label" for="listaLanches">Lista de Lanches</label>
+          <select class="form-control">
+            <option *ngFor="let group of paoByLanches">{{ group.nome }} </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+        <div class="form-group">
+          <label class="control-label" for="tipoPao">* Tipo de Pão</label>
+          <select class="form-control">
+            <option *ngFor="let pao of tipopao"> {{ pao.nome }}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+        <div class="form-group">
+          <label class="control-label" for="queijo">Queijo</label>
+          <select class="form-control">
+            <option *ngFor="let queijo of queijos">{{queijo.nome}}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+        <div class="form-group">
+          <label class="control-label" for="recheio">Recheio</label>
+          <select class="form-control">
+            <option *ngFor="let recheio of recheios">{{recheio.nome}}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+      <div class="form-group">
+        <label class="control-label" for="saladas">* Saladas</label>
+       
+          <div class="radio">
+            <ng-container *ngFor="let salada of saladas">
+              <label>
+                <input type="radio" name="chkTipo" checked="checked"> {{salada.nome}} </label>
+              <br>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+      <div class="form-group">
+        <label class="control-label" for="molhos"> Molhos</label>
+          <div class="checkbox">
+            <ng-container *ngFor="let molho of molhos">
+              <label>
+                <input type="checkbox" name=""> {{molho.nome}} </label>
+              <br>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+      <div class="form-group">
+        <label class="control-label" for="temperos"> Temperos</label>
+    
+          <div class="checkbox">
+            <ng-container *ngFor="let tempero of temperos">
+              <label>
+                <input type="checkbox" name=""> {{tempero.nome}} </label>
+              <br>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="form-group">
+          <label class="control-label valor" for="">VALOR DO LANCHE: R$ 15,00</label>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <p class="col-lg-12">
+        <button class="btn btn-primary" type="submit" (click)="toggleShow()">
+          Salvar</button>
+      </p>
+    </div>
+    <br>
+
+
+    <div class="row" *ngIf="!show">
+      <div class="col-lg-6 col-xs-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Lanches Escolhidos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="ng-scope" *ngFor="let group of paoByLanches;let i = index">
+              <td data-label="" class="ng-binding">
+                {{ i + 1 }} - {{ group.nome }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-lg-6" style="margin-top: 5em;">
+        <label class="valor">VALOR DO PEDIDO: R$ 30,00</label>
+      </div>
+      <br>
+      <div class="col-lg-12">
+        <button class="btn btn-primary" type="button" (click)="toggleFinalizar()">
+           Finalizar</button>
+      </div>
+
+    </div>
+    <br>
+
+    <ng-container *ngIf="!isFinalizar">
+      <div class="row">
+        <div class="col-lg-6">
+          <fieldset>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label class="control-label">Olá: Juliana!</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label class="control-label">O valor total do seu pedido é de :
+                    <b> R$ 30,00</b>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label class="control-label">* Qual a forma de pagamento?</label>
+                  <div class="radio">
+                    <ng-container *ngFor="let tipo of pagamento">
+                      <label>
+                        <input type="radio" name=""> {{tipo.value}} </label>
+                      <br>
+                    </ng-container>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label class="control-label" for="troco"> * Precisa de troco?</label>
+                  <div class="col-lg-12">
+                    <div class="radio">
+                      <ng-container *ngFor="let tipo of troco">
+                        <label>
+                          <input type="radio" name=""> {{tipo.value}} </label>
+                        <br>
+                      </ng-container>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="col-lg-6">
+          <fieldset style="height: 374px">
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label class="control-label">Seu pedido já está em andamento! </label><br>
+                  <label class="control-label">Use nossa calculadora caso queira
+                      dividir o valor: </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="form-group">
+                  <label class="control-label" for="">Valor do Pedido</label>
+                  <input id="" class="form-control" type="text" disabled>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="form-group">
+                  <label class="control-label" for="">Quantidade de Pessoas</label>
+                  <input id="" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="form-group">
+                  <label class="control-label" for="">Valor por Pessoa</label>
+                  <input class="form-control" type="text" disabled>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <br>
+        <br>
+        <div class="col-lg-12">
+          <table class="table">
+            <thead>
+              <th>&nbsp;</th>
+              <th>Valor</th>
+              <th>%</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pessoa 1</td>
+                <td>
+                  <input type="text" class="form-control wdt-30" />
+                </td>
+                <td>
+                  <input type="text" class="form-control wdt-30" />
+                </td>
+              </tr>
+              <tr>
+                <td>Pessoa 2</td>
+                <td>
+                  <input type="text" class="form-control wdt-30" />
+                </td>
+                <td>
+                  <input type="text" class="form-control wdt-30" />
+                </td>
+              </tr>
+              <tr>
+                <td>Pessoa 3</td>
+                <td>
+                  <input type="text" class="form-control wdt-30" />
+                </td>
+                <td>
+                  <input type="text" class="form-control wdt-30" />
+                </td>
+              </tr>
+              <tr>
+                <td>Pessoa 4</td>
+                <td>
+                  <input type="text" class="form-control wdt-30" />
+                </td>
+                <td>
+                  <input type="text" class="form-control wdt-30" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </ng-container>
+  </div>
+
+</form>

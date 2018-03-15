@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="../assets/img/_logoMenor2.png" alt="Imagem Logo" style="width: 70px;">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cardápio</a>
+            </li>
+            <li class="dropdown">
+                <select class="form-control">
+                    <option *ngFor="let idioma of idiomas">{{idioma.descricao}}</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+</nav>
