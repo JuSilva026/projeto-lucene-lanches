@@ -21,7 +21,9 @@ Framework Bootstrap 4 responsivo;
 
 ## Navegadores
 Internet Explorer;
+
 Google Chrome;
+
 Firefox;
 
 
