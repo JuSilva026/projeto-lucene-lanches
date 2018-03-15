@@ -3,7 +3,7 @@ O Lucene Lanches disponibiliza o delivery do seu lanche favorito a seus clientes
 
 O projeto foi gerado pelo [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
 
-## Development server
+## Servidor de desenvolvimento
 
 Execute o 'ng serve' para um servidor dev. Navegue para http: // localhost: 4200 /. O aplicativo irá recarregar automaticamente se você alterar qualquer um dos arquivos de origem.
 
