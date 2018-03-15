@@ -16,7 +16,7 @@ download - https://www.visualstudio.com/pt-br/vs/node-js/
 
 Possuir a última versão do NPM - Node Package Manager , o gerenciador de pacotes do Node.js (em geral ao instalar o Node.js ele já é instalado)
 
-Baixe o projeto e abra no editor de código (Recomendado: Visual Studio Code que possui um 'Integrated Terminal').
+Feito isso abra o VS Code e no menu File, clique em Open Folder, selecione a pasta projeto-lucene-lanches e clique em Selecionar Pasta.
 Execute o comando 'npm install' para instalar todas as dependências do projeto.
 Após isso, execute o 'ng serve' para um servidor dev. 
 Navegue para http: // localhost: 4200 /. 
