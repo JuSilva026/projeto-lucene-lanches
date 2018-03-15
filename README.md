@@ -10,8 +10,10 @@ git clone https://github.com/JuSilva026/projeto-lucene-lanches.git
 
 Instalar o Visual Studio Code :
 download : https://code.visualstudio.com/download
+
 Instalar a última versão do Node.js :
 download - https://www.visualstudio.com/pt-br/vs/node-js/
+
 Possuir a última versão do NPM - Node Package Manager , o gerenciador de pacotes do Node.js (em geral ao instalar o Node.js ele já é instalado)
 
 Baixe o projeto e abra no editor de código (Recomendado: Visual Studio Code que possui um 'Integrated Terminal').
