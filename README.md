@@ -1,6 +1,7 @@
-# LuceneLanches
+# Lucene Lanches
+O Lucene Lanches disponibiliza o delivery do seu lanche favorito a seus clientes para que eles possam realizar pedidos a qualquer momento e em qualquer lugar.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
+O projeto foi gerado pelo [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
 
 ## Development server
 
