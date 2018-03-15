@@ -18,9 +18,9 @@ O aplicativo irá recarregar automaticamente se você alterar qualquer um dos ar
 
 O projeto foi implementado utilizando as seguintes tecnologias/recursos:
 
-Angular 5 com Typescript;
+- Angular 5 com Typescript;
+- Framework Bootstrap 4 responsivo;
 
-Framework Bootstrap 4 responsivo;
 
 ## Navegadores
 
