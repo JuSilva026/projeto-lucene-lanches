@@ -4,10 +4,12 @@ O Lucene Lanches disponibiliza o delivery do seu lanche favorito a seus clientes
 O projeto foi gerado pelo [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
 
 ## Servidor de desenvolvimento
+Baixe o arquivo e abra em um editor de código (Recomendado: Visual Studio Code que possui um 'Integrated Terminal').
+Execute o comando 'npm install' para instalar todas as dependências do projeto.
+Após isso, execute o 'ng serve' para um servidor dev. 
+Navegue para http: // localhost: 4200 /. 
+O aplicativo irá recarregar automaticamente se você alterar qualquer um dos arquivos de origem.
 
-Execute o 'ng serve' para um servidor dev. Navegue para http: // localhost: 4200 /. O aplicativo irá recarregar automaticamente se você alterar qualquer um dos arquivos de origem.
-
-Dica de Software: Visual Studio Code, que possui um terminar integrado.
 
 ## Code scaffolding
 
